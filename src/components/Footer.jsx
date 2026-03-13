@@ -1,3 +1,4 @@
+import { Facebook, Instagram, X } from "lucide-react";
 import React from "react";
 
 const Footer = () => {
@@ -16,16 +17,23 @@ const Footer = () => {
             Frontend developer crafting clean, modern web experiences from
             Maharashtra, India.
           </p>
+          <div className="flex items-center gap-2">
+            <Instagram className="text-pink-500 hover:text-pink-600 cursor-pointer" />
+            <Facebook className="text-[#1877F2] cursor-pointer hover:text-[#064ca7]" />
+            <X className="text-white font-bold border border-white bg-black rounded-lg cursor-pointer hover:bg-black/45" />
+          </div>
         </div>
 
         {/* Links */}
         <div className="flex flex-col gap-3">
-          <h3 className="font-semibold text-yellow-400 mb-1">Quick Links</h3>
+          <h3 className="font-bold text-xl text-yellow-400 mb-1">
+            Quick Links
+          </h3>
           {["Home", "Services", "Projects", "About"].map((link) => (
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
-              className="text-gray-300 hover:text-yellow-400 transition text-sm w-fit"
+              className="text-gray-300 hover:text-yellow-400 transition text-md w-fit"
             >
               {link}
             </a>
@@ -34,18 +42,18 @@ const Footer = () => {
 
         {/* Contact */}
         <div className="flex flex-col gap-3">
-          <h3 className="font-semibold text-yellow-400 mb-1">Contact</h3>
-          <a href="" className="text-gray-300 text-sm">
+          <h3 className="font-bold text-xl text-yellow-400 mb-1">Contact</h3>
+          <a href="" className="text-gray-300 text-md">
             chitraosoham1845@gmail.com
           </a>
-          <p className="text-gray-300 text-sm">Maharashtra, India</p>
-          <button className="mt-2 bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold hover:bg-yellow-300 transition w-fit text-sm">
+          <p className="text-gray-300 text-md">Maharashtra, India</p>
+          <button className="mt-2 bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold hover:bg-transparent hover:border hover:text-white hover:border-yellow-400 transition w-fit text-sm cursor-pointer">
             Hire Me
           </button>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto border-t border-white/20 mt-10 pt-6 text-center text-gray-400 text-sm">
+      <div className="max-w-7xl mx-auto border-t border-white/20 mt-10 pt-6 text-center text-white text-sm">
         © {new Date().getFullYear()} Soham Chitrao. All rights reserved.
       </div>
     </footer>
