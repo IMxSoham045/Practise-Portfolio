@@ -24,12 +24,12 @@ A modern, responsive personal portfolio website built to showcase projects, skil
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose              |
-| ---------- | -------------------- |
-| HTML5      | Structure & markup   |
-| CSS3       | Styling & animations |
-| JavaScript | Interactivity        |
-| Netlify    | Hosting & deployment |
+| Technology  | Purpose              |
+| ----------- | -------------------- |
+| HTML        | Structure & markup   |
+| TailwindCSS | Styling & animations |
+| JavaScript  | Interactivity        |
+| Netlify     | Hosting & deployment |
 
 > _(Update this table if you're using a framework like React, Vue, or a CSS library like Tailwind/Bootstrap)_
 
@@ -72,10 +72,10 @@ portfolio/
 ├── index.html          # Main HTML file
 ├── style.css           # Stylesheet
 ├── script.js           # JavaScript logic
-├── src           
+├── src
 ├    ├── assets/        # Project images, profile photo
-│    ├── components/    # Project Components         
-│    ├── pages/    # Project Pages         
+│    ├── components/    # Project Components
+│    ├── pages/    # Project Pages
 └── README.md           # Project documentation
 ```
 
@@ -116,4 +116,3 @@ Feel free to reach out via the contact section on the [live site](https://practi
 
 - **GitHub:** [IMXSoham045](https://github.com/IMxSoham045)
 - **Email:** chitraosoham1845@gmail.com
-
