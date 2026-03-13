@@ -42,7 +42,8 @@ const Hero = () => {
           <motion.div
             variants={container}
             initial="hidden"
-            animate="show"
+            whileInView="show"
+            viewport={{ once: true }}
             className="flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1"
           >
             <motion.span
@@ -109,9 +110,13 @@ const Hero = () => {
           </motion.div>
 
           {/* RIGHT — image shown first on mobile */}
-          <div className="flex justify-center items-center order-1 md:order-2">
+          <motion.div
+            variants={imageZoom}
+            initial="hidden"
+            animate="show"
+            className="flex justify-center items-center order-1 md:order-2"
+          >
             <div className="relative">
-              {/* Yellow circle background */}
               <div className="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-105 lg:h-105 bg-yellow-400 rounded-full flex items-center justify-center">
                 <img
                   src={profile}
@@ -119,26 +124,8 @@ const Hero = () => {
                   className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-[380px] lg:h-[380px] object-cover object-top rounded-full relative z-10"
                 />
               </div>
-
-              {/* Badge — bottom left, anchored to the circle */}
-              <motion.span
-                animate={{ y: [0, -8, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="absolute -bottom-2 left-0 sm:bottom-4 sm:-left-4 bg-green-900 text-white px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium z-20 whitespace-nowrap"
-              >
-                MERN Learner
-              </motion.span>
-
-              {/* Badge — top right */}
-              <motion.span
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="absolute -top-2 right-0 sm:top-4 sm:-right-4 bg-yellow-500 text-white px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium z-20 whitespace-nowrap"
-              >
-                Frontend Developer
-              </motion.span>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
