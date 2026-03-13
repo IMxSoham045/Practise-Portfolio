@@ -116,7 +116,7 @@ const Hero = () => {
                 <img
                   src={profile}
                   alt="Soham Chitrao"
-                  className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-95 lg:h-95 object-cover object-top rounded-full relative z-10"
+                  className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-[380px] lg:h-[380px] object-cover object-top rounded-full relative z-10"
                 />
               </div>
 
