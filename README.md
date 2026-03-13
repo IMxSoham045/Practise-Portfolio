@@ -72,9 +72,10 @@ portfolio/
 ├── index.html          # Main HTML file
 ├── style.css           # Stylesheet
 ├── script.js           # JavaScript logic
-├── assets/
-│   ├── images/         # Project images, profile photo
-│   └── icons/          # Skill/tech icons
+├── src           
+├    ├── assets/        # Project images, profile photo
+│    ├── components/    # Project Components         
+│    ├── pages/    # Project Pages         
 └── README.md           # Project documentation
 ```
 
