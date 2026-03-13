@@ -5,7 +5,10 @@ import { Typewriter } from "react-simple-typewriter";
 
 const About = () => {
   return (
-    <section className="bg-orange-400 min-h-screen flex items-center justify-center px-6 py-16">
+    <section
+      className="bg-orange-400 min-h-screen flex items-center justify-center px-6 py-16"
+      id="#about"
+    >
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* LEFT IMAGE */}
         <div className="relative flex justify-center">

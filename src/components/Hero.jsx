@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import React from "react";
+import profile from "../assets/profile.webp";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -82,7 +83,7 @@ const Hero = () => {
             >
               I'm a beginner{" "}
               <span className="text-amber-900 font-medium">
-                ***Frontend Developer***
+                Frontend Developer
               </span>{" "}
               looking for a job opportunity to grow and contribute.
             </motion.p>
@@ -113,7 +114,7 @@ const Hero = () => {
               {/* Yellow circle background */}
               <div className="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-105 lg:h-105 bg-yellow-400 rounded-full flex items-center justify-center">
                 <img
-                  src="./src/assets/profile.webp"
+                  src={profile}
                   alt="Soham Chitrao"
                   className="w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-95 lg:h-95 object-cover object-top rounded-full relative z-10"
                 />

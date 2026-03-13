@@ -4,7 +4,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <section className="bg-green-900 rounded-full text-white px-6 py-4 relative">
+    <section className="bg-green-900 rounded-full text-white px-6 py-4 relative ">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex gap-4 items-center">

@@ -31,7 +31,10 @@ const Favorites = () => {
     },
   };
   return (
-    <div className="bg-gray-200 flex justify-center items-center px-6 py-12">
+    <div
+      className="bg-gray-200 flex justify-center items-center px-6 py-12"
+      id="#favorites"
+    >
       <motion.div
         variants={container}
         initial="hidden"

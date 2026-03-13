@@ -15,6 +15,10 @@ body {
     sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   margin: 2rem 4rem;
 }
@@ -38,5 +42,3 @@ section {
 .zoom-text {
   animation: animate 3s linear 0.9s infinite;
 }
-
-.group-hover: shadow-[0_0_20px_rgba(250, 204, 21, 0.8)];
