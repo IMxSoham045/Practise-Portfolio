@@ -116,8 +116,3 @@ Feel free to reach out via the contact section on the [live site](https://practi
 - **GitHub:** [IMXSoham045](https://github.com/IMxSoham045)
 - **Email:** chitraosoham1845@gmail.com
 
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
