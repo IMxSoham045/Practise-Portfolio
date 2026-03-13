@@ -2,6 +2,24 @@ import { LineDotRightHorizontal } from "lucide-react";
 import React from "react";
 import { motion } from "framer-motion";
 
+import html from "../assets/html.png";
+import js from "../assets/js.png";
+import react from "../assets/react.png";
+import vsCode from "../assets/vsCode.png";
+import chatgpt from "../assets/chatgpt.png";
+import claude from "../assets/claude.png";
+import figma from "../assets/figma.png";
+
+const tools = [
+  { src: html, alt: "HTML" },
+  { src: js, alt: "JavaScript", extraClass: "rounded-full object-bottom" },
+  { src: react, alt: "React" },
+  { src: vsCode, alt: "VsCode" },
+  { src: chatgpt, alt: "ChatGPT" },
+  { src: claude, alt: "Claude" },
+  { src: figma, alt: "Figma" },
+];
+
 const Favorites = () => {
   const container = {
     hidden: { opacity: 0 },
@@ -57,36 +75,21 @@ const Favorites = () => {
         </h1>
 
         <div className="flex flex-wrap justify-center items-center gap-4 mt-2">
-          {[
-            { src: "./src/assets/html.png", alt: "HTML" },
-            {
-              src: "./src/assets/js.png",
-              alt: "JavaScript",
-              extraClass: "rounded-full object-bottom",
-            },
-            { src: "./src/assets/react.png", alt: "React" },
-            { src: "./src/assets/vsCode.png", alt: "VsCode" },
-            { src: "./src/assets/chatgpt.png", alt: "ChatGPT" },
-            { src: "./src/assets/claude.png", alt: "Claude" },
-            { src: "./src/assets/figma.png", alt: "Figma" },
-          ].map((tool, i) => (
+          {tools.map((tool, i) => (
             <div key={i} className="relative group">
-              {/* Tooltip */}
               <span
                 className="absolute -bottom-10 left-1/2 -translate-x-1/2 
-                             bg-black text-white text-xs px-3 py-1 rounded-md 
-                                opacity-0 group-hover:opacity-100 
-                                    transition duration-300 whitespace-nowrap"
+        bg-black text-white text-xs px-3 py-1 rounded-md 
+        opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap"
               >
                 {tool.alt}
               </span>
 
-              {/* Icon container */}
               <div
                 className="bg-gray-400/65 p-4 sm:p-5 rounded-full
-    transition duration-300
-    group-hover:shadow-[0_0_20px_rgba(250,204,21,0.8)]
-    group-hover:scale-110 cursor-pointer"
+        transition duration-300
+        group-hover:shadow-[0_0_20px_rgba(250,204,21,0.8)]
+        group-hover:scale-110 cursor-pointer"
               >
                 <div className="bg-white p-2 rounded-full">
                   <img

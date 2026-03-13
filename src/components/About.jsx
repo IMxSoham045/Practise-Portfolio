@@ -2,6 +2,7 @@ import { ArrowRight, LineDotRightHorizontal } from "lucide-react";
 import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import profile from "../assets/profile.webp";
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
         <div className="relative flex justify-center">
           <div className="bg-yellow-200 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full flex items-center justify-center relative">
             <img
-              src="./src/assets/profile.webp"
+              src={profile}
               className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full relative z-10 object-cover object-top"
             />
 
