@@ -113,9 +113,8 @@ This is a personal project, but suggestions are welcome!
 
 Feel free to reach out via the contact section on the [live site](https://practise-myportfolio.netlify.app/) or connect on:
 
-- **GitHub:** [your-username](https://github.com/your-username)
-- **LinkedIn:** [your-linkedin](https://linkedin.com/in/your-linkedin)
-- **Email:** your@email.com
+- **GitHub:** [IMXSoham045](https://github.com/IMxSoham045)
+- **Email:** chitraosoham1845@gmail.com
 
 ---
 
